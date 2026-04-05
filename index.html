@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SP360 — Free FY27 Promotion for DFCS Providers | Smart Provider</title>
+<meta name="description" content="Get free full access to SP360 through July 1, 2026. AI-powered agency management for DFCS Providers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
+:root {
+  --primary: #6B2D8B;
+  --primary-light: #8B4DAB;
+  --secondary: #1B6B3A;
+  --secondary-light: #28844E;
+  --foreground: #1a1f2e;
+  --muted: #6b7280;
+  --bg: #fff;
+  --bg-surface: #f6f4fb;
+  --border: #e5e2ee;
+  --card: #fff;
+  --radius: 0.75rem;
+  --gradient-hero: linear-gradient(135deg, #6B2D8B, #5a3d9e, #1B6B3A);
+  --gradient-surface: linear-gradient(180deg, #f6f4fb, #fff);
+}
+
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  color: var(--foreground);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+}
+h1,h2,h3,h4,h5,h6 { font-family: 'Plus Jakarta Sans', sans-serif; line-height: 1.2; }
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+
+/* ---- HERO ---- */
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: var(--gradient-surface);
+  padding: 5rem 0 6rem;
+  text-align: center;
+}
+.hero::before, .hero::after {
+  content: ''; position: absolute; width: 400px; height: 400px; border-radius: 50%; filter: blur(100px); opacity: .12;
+}
+.hero::before { top: -200px; right: -100px; background: var(--primary); }
+.hero::after { bottom: -200px; left: -100px; background: var(--secondary); }
+
+.hero-logo { width: 140px; height: 140px; margin: 0 auto 2rem; animation: float 4s ease-in-out infinite; }
+
+@keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+@keyframes fadeUp { from{opacity:0;transform:translateY(30px)} to{opacity:1;transform:translateY(0)} }
+@keyframes pulseGlow { 0%,100%{box-shadow:0 0 20px rgba(107,45,139,.2)} 50%{box-shadow:0 0 40px rgba(107,45,139,.4)} }
+
+.hero-content { position: relative; z-index: 1; animation: fadeUp .8s ease-out; }
+
+.badge {
+  display: inline-block; background: rgba(107,45,139,.1); color: var(--primary);
+  padding: .4rem 1rem; border-radius: 50px; font-size: .875rem; font-weight: 600; margin-bottom: 1.5rem;
+}
+
+.hero h1 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800; margin-bottom: 1.5rem; }
+.hero h1 .gradient-text {
+  background: var(--gradient-hero); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+
+.hero p { max-width: 640px; margin: 0 auto 1rem; font-size: 1.1rem; color: var(--muted); }
+.hero p strong { color: var(--foreground); }
+
+.hero-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2.5rem; }
+.btn-primary {
+  display: inline-flex; align-items: center; justify-content: center;
+  background: var(--gradient-hero); color: #fff; padding: 1rem 2rem;
+  border-radius: var(--radius); font-size: 1.1rem; font-weight: 700;
+  text-decoration: none; border: none; cursor: pointer;
+  animation: pulseGlow 3s ease-in-out infinite; transition: opacity .2s;
+}
+.btn-primary:hover { opacity: .9; }
+.btn-outline {
+  display: inline-flex; align-items: center; justify-content: center;
+  border: 2px solid var(--primary); color: var(--primary); padding: 1rem 2rem;
+  border-radius: var(--radius); font-size: 1.1rem; font-weight: 700;
+  text-decoration: none; background: transparent; cursor: pointer; transition: background .2s;
+}
+.btn-outline:hover { background: rgba(107,45,139,.05); }
+
+/* ---- AI SECTION ---- */
+.ai-section { padding: 5rem 0; background: rgba(246,244,251,.4); }
+.section-label {
+  display: inline-block; background: rgba(27,107,58,.1); color: var(--secondary);
+  padding: .4rem 1rem; border-radius: 50px; font-size: .875rem; font-weight: 600; margin-bottom: 1rem;
+}
+.section-title { font-size: clamp(1.5rem, 3vw, 2.25rem); font-weight: 800; margin-bottom: .75rem; }
+.section-subtitle { color: var(--muted); font-size: 1.1rem; max-width: 560px; margin: 0 auto 3rem; }
+.text-center { text-align: center; }
+
+.ai-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 900px; margin: 0 auto; }
+.ai-card {
+  background: var(--card); border: 1px solid var(--border); border-radius: 1rem;
+  padding: 2rem; transition: box-shadow .3s;
+}
+.ai-card:hover { box-shadow: 0 8px 30px rgba(0,0,0,.08); }
+.ai-card img { width: 100%; height: 180px; object-fit: contain; margin-bottom: 1.5rem; }
+.ai-card h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: .5rem; }
+.ai-card p { color: var(--muted); font-size: .95rem; }
+
+/* ---- CORE FEATURES ---- */
+.features { padding: 5rem 0; }
+.features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 900px; margin: 0 auto; }
+.feature-card {
+  border: 1px solid var(--border); border-radius: 1rem; padding: 1.5rem;
+  transition: border-color .3s, box-shadow .3s; cursor: default;
+}
+.feature-card:hover { border-color: rgba(107,45,139,.3); box-shadow: 0 4px 20px rgba(0,0,0,.06); }
+.feature-icon {
+  width: 48px; height: 48px; border-radius: 12px; background: rgba(107,45,139,.1);
+  display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; font-size: 1.4rem;
+}
+.feature-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: .5rem; }
+.feature-card p { color: var(--muted); font-size: .9rem; }
+
+/* ---- BENEFITS ---- */
+.benefits { padding: 5rem 0; background: var(--gradient-hero); color: #fff; }
+.benefits h2 { font-size: clamp(1.5rem, 3vw, 2.25rem); font-weight: 800; margin-bottom: 2.5rem; }
+.benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; max-width: 700px; margin: 0 auto; }
+.benefit-item {
+  display: flex; align-items: center; gap: .75rem;
+  background: rgba(255,255,255,.12); backdrop-filter: blur(8px);
+  border-radius: 12px; padding: 1rem 1.25rem;
+}
+.benefit-item svg { flex-shrink: 0; width: 20px; height: 20px; opacity: .85; }
+.benefit-item span { font-weight: 500; }
+
+/* ---- DIFFERENTIATORS ---- */
+.diff { padding: 5rem 0; }
+.diff-pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; max-width: 800px; margin: 0 auto; }
+.pill {
+  display: flex; align-items: center; gap: .5rem;
+  border: 1px solid var(--border); border-radius: 50px;
+  padding: .6rem 1.25rem; font-size: .9rem; font-weight: 600;
+  background: var(--card); box-shadow: 0 1px 3px rgba(0,0,0,.04);
+}
+.pill svg { width: 18px; height: 18px; color: var(--secondary); }
+
+/* ---- CTA ---- */
+.cta { padding: 5rem 0; background: rgba(246,244,251,.4); }
+.cta-box {
+  max-width: 640px; margin: 0 auto; text-align: center;
+  border: 1px solid var(--border); border-radius: 1.5rem;
+  background: var(--card); padding: 3rem 2rem; box-shadow: 0 8px 40px rgba(0,0,0,.06);
+}
+.cta-box h2 { font-size: clamp(1.5rem, 3vw, 2.25rem); font-weight: 800; margin-bottom: .5rem; }
+.cta-box p { color: var(--muted); font-size: 1.1rem; margin-bottom: 2rem; }
+
+/* ---- FOOTER ---- */
+footer {
+  padding: 2rem 0; text-align: center; font-size: .875rem;
+  color: var(--muted); border-top: 1px solid var(--border);
+}
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 640px) {
+  .hero { padding: 3rem 0 4rem; }
+  .hero-logo { width: 110px; height: 110px; }
+  .hero-buttons { flex-direction: column; align-items: center; }
+  .btn-primary, .btn-outline { width: 100%; max-width: 320px; }
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-content">
+    <img src="sp360-logo.png" alt="SP360 by Smart Provider" class="hero-logo">
+    <!-- <div class="badge">FY27 Free Promotion</div> -->
+    <h1>
+      <span class="gradient-text">Free Full Access</span><br>
+      Through July 1, 2026
+    </h1>
+    <p>Congratulations on your FY27 DFCS Contract! Smart Provider is proud to offer <strong>free, full access to SP360</strong> to support DFCS Providers during this period of reduced referrals.</p>
+    <p>If you want a faster, smarter, and more cost-efficient way to run your agency, now is the time to switch. <strong>SP360 will save you time, money, and stress instantly!</strong></p>
+    <div class="hero-buttons">
+      <a href="#demo" class="btn-primary">Watch a Quick Demo</a>
+      <a href="#features" class="btn-outline">Explore Features</a>
+    </div>
+  </div>
+</section>
+
+<!-- AI SECTION -->
+<section class="ai-section">
+  <div class="container text-center">
+    <div class="section-label">Powered by AI</div>
+    <h2 class="section-title">AI Built Specifically for DFCS</h2>
+    <p class="section-subtitle">Simply drag and drop — SP360 automatically enters everything for you.</p>
+    <div class="ai-grid">
+      <div class="ai-card">
+        <img src="sa-drag-drop.png" alt="Service Authorization auto-entry" loading="lazy">
+        <h3>Service Authorizations</h3>
+        <p>Drag and drop your SAs and referrals — our AI reads and enters them automatically. No manual data entry.</p>
+      </div>
+      <div class="ai-card">
+        <img src="payment-auto.png" alt="Payment auto-entry" loading="lazy">
+        <h3>Payments</h3>
+        <p>Payment documents are automatically processed and entered into your system — fast, accurate, effortless.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CORE FEATURES -->
+<section class="features" id="features">
+  <div class="container text-center">
+    <h2 class="section-title">Core Features</h2>
+    <p class="section-subtitle">Everything you need to run your agency efficiently.</p>
+    <div class="features-grid" id="featuresGrid"></div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="benefits">
+  <div class="container text-center">
+    <h2>What This Means for You</h2>
+    <div class="benefits-grid" id="benefitsGrid"></div>
+  </div>
+</section>
+
+<!-- DIFFERENTIATORS -->
+<section class="diff">
+  <div class="container text-center">
+    <h2 class="section-title">How We Are Different</h2>
+    <p class="section-subtitle">Flexibility and transparency at every step.</p>
+    <div class="diff-pills" id="diffPills"></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="demo">
+  <div class="container">
+    <div class="cta-box">
+      <h2>No Risk. Only Upside.</h2>
+      <p>This is a limited-time offer. Get started today and experience the difference immediately.</p>
+      <a href="https://sp360.smartprovider.com/demo" target="_blank" rel="noopener" class="btn-primary">Click Here for a Quick Demo</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">&copy; <span id="year"></span> Smart Provider. All rights reserved.</div>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const checkSvg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>';
+
+// Features
+const features = [
+  { icon: '⏱️', title: 'Invoice Batching', desc: 'Entire counties batched in under 30 seconds.' },
+  { icon: '🖱️', title: 'Payroll', desc: 'Completed in just 3 clicks, with real-time visibility for staff.' },
+  { icon: '🛡️', title: 'Onboarding & Roster Compliance', desc: 'Track credentials, receive expiration alerts, and stay audit-ready.' },
+  { icon: '📄', title: 'Documentation Management', desc: 'Supervisors can review, approve, or return notes with instant staff notifications. Create custom templates.' },
+  { icon: '📋', title: '56A & 56AA Codes', desc: 'Documented on a single note — streamlined and simple.' },
+];
+document.getElementById('featuresGrid').innerHTML = features.map(f => `
+  <div class="feature-card">
+    <div class="feature-icon">${f.icon}</div>
+    <h3>${f.title}</h3>
+    <p>${f.desc}</p>
+  </div>
+`).join('');
+
+// Benefits
+const benefits = ['Reduce clerical overhead','Eliminate human error','Save hours every week','Stay fully compliant with less effort','Free use of SP360 until new FY'];
+document.getElementById('benefitsGrid').innerHTML = benefits.map(b => `
+  <div class="benefit-item">${checkSvg}<span>${b}</span></div>
+`).join('');
+
+// Differentiators
+const diffs = [
+  { icon: '🤖', text: 'AI technology (featuring Jeannette)' },
+  { icon: '📝', text: 'No contracts' },
+  { icon: '📅', text: 'Month-to-month flexibility' },
+  { icon: '🚪', text: 'Cancel anytime' },
+  { icon: '💰', text: '$495 flat rate after July 1, 2026' },
+];
+document.getElementById('diffPills').innerHTML = diffs.map(d => `
+  <div class="pill"><span>${d.icon}</span><span>${d.text}</span></div>
+`).join('');
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    const el = document.querySelector(a.getAttribute('href'));
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+</script>
+</body>
+</html>
